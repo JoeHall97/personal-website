@@ -102,7 +102,8 @@ function AboutMe (props) {
                             Computer science has been a passion of mine scince highschool. I am proficient
                             in many different programming languages, including: Java, Python, Javascript, C#, C/C++, SQL, Scala,
                             and Clojure. I'm also proficient with various tools such as: Node, React, git, BASH, Linux 
-                            (Ubuntu and RHEL), Microsoft Azure, Amazon Webservices, and Latex. </p>
+                            (Ubuntu and RHEL), Microsoft Azure, Amazon Webservices, and Latex. 
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -149,7 +150,7 @@ function ContactMe (props) {
 function Projects (props) {
     return (
         <div>
-            <div class="content-div" style={{"padding-top":"150px"}}>
+            <div class="content-div" style={{"padding-top":"100px"}}>
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-12 col-sm-12">
