@@ -188,7 +188,7 @@ function Projects (props) {
                     </div>
                     <div class="row">
                         <div class="col-lg-4 col-sm-12">
-                            <img class="img-fluid" src={policeloginphoto} alt="Login screen for the photo tagging website"/>
+                            <img class="img-fluid" src={policeloginphoto} alt="Login screen"/>
                         </div>
                         <div class="col-lg-8 col-sm-12">
                             <p class="mb-0">During one of my univiresity papers, I worked with a group to build a website for the
