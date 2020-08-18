@@ -2,6 +2,7 @@ import React from 'react';
 import './FrontPage.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Icon } from '@iconify/react';
+import { Helmet } from 'react-helmet';
 import githubIcon from '@iconify/icons-bytesize/github';
 import hackerrankIcon from '@iconify/icons-cib/hackerrank';
 import linkedinIcon from '@iconify/icons-cib/linkedin';
@@ -15,7 +16,7 @@ class PageNav extends React.Component {
     render(props) {
         return (
             <div>
-                <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                <nav class="navbar navbar-expand-lg navbar-expand-sm navbar-light bg-light fixed-top">
                     <div class="collapse navbar-collapse">
                         <ul class="navbar-nav mx-auto">
                             <li class="nav-item">
@@ -72,16 +73,16 @@ function AboutMe (props) {
     return (
         <div>
             <div class="center-page">
-                <h1 class="display-1 text-center">Joseph Hall</h1>
+                <h1 class="display-1 text-center" style={{"padding-top": "50%"}}>Joseph Hall</h1>
                 <p class="mb-2 text-center">A Kiwi Software Developer and Computer Enthusiast.</p>
             </div>
             <div class="content-div">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-sm-12">
                             <img src={selfphoto} alt="Myself" class="img-thumbnail"></img>
                         </div>
-                        <div class="col-lg-8">
+                        <div class="col-lg-8 col-sm-12">
                             <p class="mb-0">
                             I am a junior software developer living in New Zealand. 
                             I'm a gradute from the Unviresity of Waikato, and have attained a Bachelors of Computing 
@@ -94,15 +95,20 @@ function AboutMe (props) {
             <div class="content-div">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-lg-4 order-lg-12">
-                            <img src={codephoto} alt="Code for a reg-x parser in Java" class="img-thumbnail"></img>
+                        <div class="col-lg-4 order-lg-12 col-sm-12">
+                            <img src={codephoto} alt="Code for a reg-x parser in Java" class="img-fluid"></img>
                         </div>
-                        <div class="col-lg-8 order-lg-1">
+                        <div class="col-lg-8 order-lg-1 col-sm-12">
                             <p class="mb-0">
                             Computer science has been a passion of mine scince highschool. I am proficient
                             in many different programming languages, including: Java, Python, Javascript, C#, C/C++, SQL, Scala,
                             and Clojure. I'm also proficient with various tools such as: Node, React, git, BASH, Linux 
                             (Ubuntu and RHEL), Microsoft Azure, Amazon Webservices, and Latex. 
+                            </p>
+                            <p class="mb-0">
+                            I enjoy computer science because it allows me to take real world problems, figure out how best to solve
+                            them, and then implement the solution. The blending of theory and pratice is something I find enjoyable,
+                            as it requires two different skill sets to be used making it more challenging than just doing one or the other.
                             </p>
                         </div>
                     </div>
@@ -111,21 +117,22 @@ function AboutMe (props) {
             <div class="content-div">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-lg-5">
+                        <div class="col-lg-5 col-sm-12">
                             <blockquote class="blockquote text-center vertical-center">
                                 <p class="mb-0">1) The world is all that is the case.</p>
                                 <footer class="blockquote-footer">Ludwig Wittgenstein, <cite title="Tractatus Logico-Philosophicus">Tractatus Logico-Philosophicus</cite></footer>
                             </blockquote>
                         </div>
-                        <div class="col-lg-7">
+                        <div class="col-lg-7 col-sm-12">
                             <p class="mb-0">
                             Along side computer science I also have a deep interest in Philosophy. Analytic philosophy was what I studied at univiresity,
-                            with a focus on epistemology and metaphysics. The philosophers I am the most familiar with are: Donald Davidson, David Lewis, Willard V. Quine, 
-                            and Bertrand Russell.
+                            with a focus on epistemology (the study of knowledge) and metaphysics (the study of the nature of reality). The philosophers 
+                            I am the most familiar with are: Donald Davidson, David Lewis, Willard V. Quine, and Bertrand Russell.
                             </p>
                             <p>In my eyes philosophy is an important subject to understand well as it helps both when arguing for positions and against them. This 
-                            allows for one ot be able to critically analysis situations that they are placed in, and make the best possible decisions. It also helps when 
-                            explaining concepts, in particular large or complex ones.</p>
+                            allows for one ot be able to critically analyse situations that they are placed in, and make the best possible decisions from them. 
+                            It also helps when explaining concepts, in particular large or complex ones, as academic philosophy emphasizes clarity and precision
+                            when writing about a subject.</p>
                         </div>
                     </div>
                 </div>
@@ -137,11 +144,11 @@ function AboutMe (props) {
 function ContactMe (props) {
     return (
         <div>
-            <div class="center-page text-center" style={{height:"90vh"}}>
+            <div class="text-center" style={{"padding-top":"17%", "padding-bottom":"16%"}}>
                 <p class="h2">I am able to be contacted at the following email address:</p>
                 <p class="h2">josephdahall@hotmail.co.nz</p>
-                <p class="h2" style={{"padding-top":"50px"}}>I am also available for contact via 
-                <a href="https://www.linkedin.com/in/joseph-hall-9883111a8/">Linkedin.</a></p>
+                <p class="h2" style={{"padding-top":"50px"}}>I am also available for contact via  
+                <a href="https://www.linkedin.com/in/joseph-hall-9883111a8/"> Linkedin.</a></p>
             </div>
         </div>
     );
@@ -155,7 +162,7 @@ function Projects (props) {
                     <div class="row">
                         <div class="col-lg-12 col-sm-12">
                             <a href="https://github.com/JoeHall97/HonoursProject">
-                                <h1 class="display-3 text-center" style={{"padding-bottom":"75px"}}>Honours Disertation Project</h1>
+                                <h1 class="display-4 text-center" style={{"padding-bottom":"75px"}}>Honours Disertation Project</h1>
                             </a>
                         </div>
                     </div>
@@ -182,7 +189,7 @@ function Projects (props) {
                     <div class="row">
                         <div class="col-lg-12 col-sm-12">
                             <a href="https://github.com/JBAkroyd/PolicePhotoTagging">
-                                <h1 class="display-3 text-center" style={{"padding-bottom":"75px"}}>Police Photo Tagging Website</h1>
+                                <h1 class="display-4 text-center" style={{"padding-bottom":"75px"}}>Police Photo Tagging Website</h1>
                             </a>
                         </div>
                     </div>
@@ -204,7 +211,7 @@ function Projects (props) {
                     <div class="row">
                         <div class="col-lg-12 col-sm-12">
                             <a href="https://github.com/JoeHall97/PathFinder">
-                                <h1 class="display-3 text-center" style={{"padding-bottom":"75px"}}>Python Path Finder</h1>
+                                <h1 class="display-4 text-center" style={{"padding-bottom":"75px"}}>Python Path Finder</h1>
                             </a>
                         </div>
                     </div>
@@ -240,6 +247,9 @@ class FrontPage extends React.Component {
     render (props) {
         return (
             <div>
+                <Helmet>
+                    <title>Joseph Hall</title>
+                </Helmet>
                 <PageNav onClick={(content, name) => this.onClick(content, name)} 
                 currentPage={this.state.currName}/>
                 {this.state.currPage}

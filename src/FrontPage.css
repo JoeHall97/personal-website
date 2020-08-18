@@ -17,10 +17,9 @@ body {
   }
 
 .center-page {
-    position: relative;
+    /*position: relative;*/
     margin: auto;
-    padding-top: 20%;
-    /*margin: 0 auto;*/
+    text-align: center;
     height: 100vh;
     width: 750px;
 }
@@ -60,9 +59,13 @@ body {
   }
 
   .content-div {
-    position: relative;
-    /*margin-top: 35%;*/
-    height: 100vh;
+    /*position: relative;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 100vh;*/
+    margin: auto;
+    width: 90%;
     padding-left: 5%;
     padding-right: 5%;
+    padding-bottom: 12%;
   }
