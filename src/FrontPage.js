@@ -16,29 +16,19 @@ class PageNav extends React.Component {
     render(props) {
         return (
             <div>
-                <nav class="navbar navbar-expand-lg navbar-expand-sm navbar-light bg-light fixed-top">
-                    <div class="collapse navbar-collapse">
-                        <ul class="navbar-nav mx-auto">
-                            <li class="nav-item">
-                                <button class="btn btn-secondary navbar-btn active" onClick={() => this.props.onClick(<AboutMe />, 'AboutMe')}
-                                disabled={this.props.currentPage==="AboutMe"}>About Me</button>
-                            </li>
-                            <li class="nav-item">
-                                <button class="btn btn-secondary navbar-btn active"
-                                onClick={() => this.props.onClick(<ContactMe />, 'ContactMe')}
-                                disabled={this.props.currentPage==="ContactMe"}>
-                                  Contact Me
-                                </button>
-                            </li>
-                            <li class="nav-item">
-                                <button class="btn btn-secondary navbar-btn active"
-                                onClick={() => this.props.onClick(<Projects />, 'Projects')}
-                                disabled={this.props.currentPage==="Projects"}>
-                                  Projects
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
+                <nav class="nav justify-content-center bg-light">
+                    <li class="nav-item">
+                        <button class="btn btn-secondary navbar-btn active" onClick={() => this.props.onClick(<AboutMe />, 'AboutMe')}
+                        disabled={this.props.currentPage==="AboutMe"}>About Me</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-secondary navbar-btn active" onClick={() => this.props.onClick(<ContactMe />, 'ContactMe')}
+                        disabled={this.props.currentPage==="ContactMe"}>Contact Me</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-secondary navbar-btn active" onClick={() => this.props.onClick(<Projects />, 'Projects')}
+                        disabled={this.props.currentPage==="Projects"}>Projects</button>
+                    </li>
                 </nav>
             </div>
         );
@@ -79,13 +69,13 @@ function AboutMe (props) {
             <div class="content-div">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-lg-4 col-sm-12">
+                        <div class="col-lg-4 col-sm-12 col-xs-12">
                             <img src={selfphoto} alt="Myself" class="img-thumbnail"></img>
                         </div>
-                        <div class="col-lg-8 col-sm-12">
+                        <div class="col-lg-8 col-sm-12 col-xs-12">
                             <p class="mb-0">
                             I am a junior software developer living in New Zealand. 
-                            I'm a gradute from the Unviresity of Waikato, and have attained a Bachelors of Computing 
+                            I'm a gradute from the University of Waikato, and have attained a Bachelors of Computing 
                             and Mathematical Sciences with Honours (Second Class, First Division), majoring in Computer 
                             Science and Philosophy.</p>
                         </div>
@@ -100,14 +90,14 @@ function AboutMe (props) {
                         </div>
                         <div class="col-lg-8 order-lg-1 col-sm-12">
                             <p class="mb-0">
-                            Computer science has been a passion of mine scince highschool. I am proficient
+                            Computer science has been a passion of mine since highschool. I am proficient
                             in many different programming languages, including: Java, Python, Javascript, C#, C/C++, SQL, Scala,
                             and Clojure. I'm also proficient with various tools such as: Node, React, git, BASH, Linux 
                             (Ubuntu and RHEL), Microsoft Azure, Amazon Webservices, and Latex. 
                             </p>
                             <p class="mb-0">
                             I enjoy computer science because it allows me to take real world problems, figure out how best to solve
-                            them, and then implement the solution. The blending of theory and pratice is something I find enjoyable,
+                            them, and then implement the solution. The blending of theory and practice is something I find enjoyable,
                             as it requires two different skill sets to be used making it more challenging than just doing one or the other.
                             </p>
                         </div>
@@ -125,7 +115,7 @@ function AboutMe (props) {
                         </div>
                         <div class="col-lg-7 col-sm-12">
                             <p class="mb-0">
-                            Along side computer science I also have a deep interest in Philosophy. Analytic philosophy was what I studied at univiresity,
+                            Along side computer science I also have a deep interest in Philosophy. Analytic philosophy was what I studied at university,
                             with a focus on epistemology (the study of knowledge) and metaphysics (the study of the nature of reality). The philosophers 
                             I am the most familiar with are: Donald Davidson, David Lewis, Willard V. Quine, and Bertrand Russell.
                             </p>
@@ -178,7 +168,7 @@ function Projects (props) {
                             way for these programs to be executed in parallel, i.e. what is the best way to allocate threads during
                             the run time of these programs. My project, therefore, worked towards building a benchmarking application
                             for these legacy applications and how effective a PID controller would be compaired to other execution 
-                            strategies. I built the benchmarking application using Java, and analysised the results using python and 
+                            strategies. I built the benchmarking application using Java, and analysized the results using python and 
                             the Pandas library.</p>
                         </div>
                     </div>
@@ -198,7 +188,7 @@ function Projects (props) {
                             <img class="img-fluid" src={policeloginphoto} alt="Login screen"/>
                         </div>
                         <div class="col-lg-8 col-sm-12">
-                            <p class="mb-0">During one of my univiresity papers, I worked with a group to build a website for the
+                            <p class="mb-0">During one of my university papers, I worked with a group to build a website for the
                             Waikato Police. The website allowed for users to upload photos along side a set of tags. These tags 
                             could then be used to search for all images that have the same tags as one another. The website was built
                             using React, Node, and a SQL database.</p>
