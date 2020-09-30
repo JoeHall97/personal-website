@@ -1,0 +1,17 @@
+.ico {
+	width: 52px;
+	height: 52px;
+	margin-left: 26px;
+	margin-right: 26px;
+}
+
+.footer-row {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.page-footer {
+	position: relative;
+	margin: auto;
+	text-align: center;
+}
