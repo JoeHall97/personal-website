@@ -1,4 +1,5 @@
 import React from "react";
+import { Container, Col, Row } from "react-bootstrap";
 import "./Footer.css";
 
 import { Icon } from "@iconify/react";
@@ -10,9 +11,9 @@ export default () => {
 	return (
 		<div>
 			<footer className="page-footer">
-				<div className="container">
-					<div className="row footer-row">
-						<div className="col-md-12">
+				<Container>
+					<Row className="footer-row">
+						<Col md="12">
 							<a href="https://www.linkedin.com/in/joseph-hall-9883111a8/">
 								<Icon icon={linkedInIcon} color="black" className="ico" />
 							</a>
@@ -22,9 +23,9 @@ export default () => {
 							<a href="https://www.hackerrank.com/Joe_Hall">
 								<Icon icon={hackerRankIcon} color="black" className="ico" />
 							</a>
-						</div>
-					</div>
-				</div>
+						</Col>
+					</Row>
+				</Container>
 			</footer>
 		</div>
 	);

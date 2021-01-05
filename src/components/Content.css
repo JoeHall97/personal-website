@@ -2,18 +2,14 @@ p {
 	font-size: 1.5em;
 }
 
-.content-div {
-	margin: auto;
-	width: 90%;
-	padding-left: 5%;
-	padding-right: 5%;
-	padding-bottom: 12%;
+h1 {
+	font-weight: bold;
 }
 
-.center-page {
-	/*position: relative;*/
-	margin: auto;
-	/*text-align: center;*/
-	height: 100vh;
-	width: 750px;
+.content-row {
+	padding-top: 100px;
+}
+
+.content-row-bottom {
+	padding: 100px 0px;
 }
