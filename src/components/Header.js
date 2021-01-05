@@ -12,13 +12,19 @@ class Header extends Component {
 					<Navbar.Collapse id="basic-navbar-nav">
 						<Nav className="justify-content-center" style={{ width: "100%", textAlign: "center" }}>
 							<Nav.Item>
-								<Nav.Link href="/">About Me</Nav.Link>
+								<Nav.Link className="header-link" href="/">
+									About Me
+								</Nav.Link>
 							</Nav.Item>
 							<Nav.Item>
-								<Nav.Link href="/ContactMe">Contact Me</Nav.Link>
+								<Nav.Link className="header-link" href="/ContactMe">
+									Contact Me
+								</Nav.Link>
 							</Nav.Item>
 							<Nav.Item>
-								<Nav.Link href="/Projects">Projects</Nav.Link>
+								<Nav.Link className="header-link" href="/Projects">
+									Projects
+								</Nav.Link>
 							</Nav.Item>
 						</Nav>
 					</Navbar.Collapse>
